@@ -1,0 +1,132 @@
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+
+:root{
+    --background-day: rgba(39, 39, 39, 0.466);
+    --background-night: rgba(168, 168, 168, 0.247);
+    --text: #F9F9FB;
+    --primary: #8584AE;
+    --secondary: #101019;
+    --accent: #626194;
+}
+
+body{
+    background-color: var(--background);
+    background-image: url(images/Cloudy-Night.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Poppins', sans-serif;
+}
+
+.inputs{
+
+    height: 5vh;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 10px;
+}
+
+#search{
+    background-color: var(--background-night);
+    border-radius: 10px;
+    border: none;
+    width: 10%;
+    height: 2.8vh;
+    color: var(--text);
+    text-align: start;
+    backdrop-filter: blur(10px);
+}
+
+#submit{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+#location-header{
+    position: absolute;
+    left: 15%;
+    top: 10%;
+    color: var(--text);
+    background-color: var(--background-night);
+    width: max-content;
+    padding: 15px;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+}
+
+#location{
+    font-size: 4rem;
+    margin: 0;
+}
+
+#current-date{
+    margin: 0;
+}
+
+.bx-main{
+    position: absolute;
+    left: 15%;
+    bottom: 22%;
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    background-color: var(--background-night);
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    padding: 15px;
+}
+
+#forecast{
+    color: var(--text);
+    font-size: 3rem;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+#temperature{
+    color: var(--text);
+    font-size: 9rem;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.bx-next-days{
+    position: absolute;
+    width: 25vw;
+    height: 25vw;
+    bottom: 22%;
+    right: 20%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 20%;
+}
+
+.next{
+    backdrop-filter: blur(10px);
+    color: var(--text);
+    background-color: var(--background-night);
+    border-radius: 10px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.day{
+    margin: 0px;
+    font-size: 1.6rem;
+}
+
+.temps{
+    font-size: 3.3rem;
+    margin: 0px;
+}
+
+.forecasts{
+    margin: 0px;
+    font-size: 1.2rem;
+}
