@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+</head>
+<body>
+    <div class="inputs">
+        <input type="text" name="search" id="search" data="day-night">
+        <button id="submit"><box-icon name='search' animation='tada-hover' color='#F9F9FB' ></box-icon></button>
+    </div>
+    <div id="location-header" data="day-night">
+        <h1 id="location"></h1>
+        <h2 id="current-date"></h2>
+    </div>
+    <div class="bx-main" data="day-night">
+        <h2 id="temperature"></h2>
+        <h2 id="forecast"></h2>
+    </div>
+    <div class="bx-next-days">
+        <div class="next Done" data="day-night">
+            <h3 class="day" id="day1"></h3>
+            <h3 class="temps" id="temp1"></h3>
+            <h3 class="forecasts" id="fore1"></h3>
+        </div>
+        <div class="next Dtwo" data="day-night">
+            <h3 class="day" id="day2"></h3>
+            <h3 class="temps" id="temp2"></h3>
+            <h3 class="forecasts" id="fore2"></h3>
+        </div>
+        <div class="next Dthree" data="day-night">
+            <h3 class="day" id="day3"></h3>
+            <h3 class="temps" id="temp3"></h3>
+            <h3 class="forecasts" id="fore3"></h3>
+        </div>
+        <div class="next Dfour" data="day-night">
+            <h3 class="day" id="day4"></h3>
+            <h3 class="temps" id="temp4"></h3>
+            <h3 class="forecasts" id="fore4"></h3>
+        </div>
+    </div>
+    <script src="main.js"></script>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+</body>
+</html>
